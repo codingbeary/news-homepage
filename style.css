@@ -1,0 +1,23 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+header {
+  margin-top: 97px;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

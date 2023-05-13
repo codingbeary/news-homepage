@@ -17,82 +17,82 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <nav>
-          <img src="./assets/images/logo.svg" alt="" /> Home New Popular
-          Trending Categories
+        <nav class="nav-wrapper">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
         </nav>
       </header>
-      <main>
-        <div class="row">
-          <div class="col-md-6">
-            <section>
-              <img
-                src="./assets/images/image-web-3-desktop.jpg"
-                alt=""
-                class="img-fluid"
-              />
-              <div class="row">
-                <div class="col-6"><h1>The Bright Future of Web 3.0?</h1></div>
-                <div class="col-6">
-                  <p>
-                    We dive into the next evolution of the web that claims to
-                    put the power of the platforms back into the hands of the
-                    people. But is it really fulfilling its promise?
-                  </p>
-                  <button>Read more</button>
-                </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <main>
+            <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt=""
+              class="img-fluid"
+            />
+            <div class="row">
+              <div class="col-6"><h1>The Bright Future of Web 3.0?</h1></div>
+              <div class="col-6">
+                <p>
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button>Read more</button>
               </div>
-            </section>
-          </div>
-          <div class="col-md-6">
-            <section>
-              <h2>New</h2>
-              <h3>Hydrogen VS Electric Cars</h3>
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-
-              <h3>The Downsides of AI Artistry</h3>
-              <p>
-                What are the possible adverse effects of on-demand AI image
-                generation?
-              </p>
-
-              <h3>Is VC Funding Drying Up?</h3>
-              <p></p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </section>
-          </div>
+            </div>
+          </main>
         </div>
+        <div class="col-md-6">
+          <section>
+            <h2>New</h2>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
 
-        <section>
-          <span> 01</span>
-          <h4>Reviving Retro PCs</h4>
-          What happens when old PCs are given modern upgrades?
-          <span>02</span>
-          <h4>Top 10 Laptops of 2022</h4>
-          Our best picks for various needs and budgets.
-          <span>03</span>
-          <h4>The Growth of Gaming</h4>
-          How the pandemic has sparked fresh opportunities.
-        </section>
-      </main>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+
+            <h3>Is VC Funding Drying Up?</h3>
+            <p></p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </section>
+        </div>
+      </div>
+
+      <section>
+        <span> 01</span>
+        <h4>Reviving Retro PCs</h4>
+        What happens when old PCs are given modern upgrades?
+        <span>02</span>
+        <h4>Top 10 Laptops of 2022</h4>
+        Our best picks for various needs and budgets.
+        <span>03</span>
+        <h4>The Growth of Gaming</h4>
+        How the pandemic has sparked fresh opportunities.
+      </section>
     </div>
     <footer>
       <div class="attribution">
