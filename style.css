@@ -2,7 +2,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 header {
-  margin: 97px 30px 30px 30px;
+  margin: 97px 30px 30px 0;
 }
 ul {
   list-style: none;
@@ -12,11 +12,21 @@ ul {
 li,
 p {
   font-size: 15px;
+  color: #5e607a;
 }
 li {
   display: inline-block;
   color: #5e607a;
 }
+nav a {
+  text-decoration: none;
+  color: #5e607a;
+  transition: all 160ms ease-in-out;
+}
+nav a:hover {
+  color: #f15d51;
+}
+
 main {
   margin-bottom: 50px;
 }
@@ -29,6 +39,7 @@ h4 {
 h1 {
   font-size: 56px;
   padding: 0 30px 0 0;
+  line-height: 1;
 }
 button {
   background-color: #f15d51;
@@ -39,6 +50,10 @@ button {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 4px;
+  transition: all 220ms ease-in-out;
+}
+button:hover {
+  background-color: #00001a;
 }
 section > h2 {
   color: #e9aa52;
@@ -48,6 +63,11 @@ section > h2 {
 section h3 {
   color: #fffdfa;
   font-size: 20px;
+  transition: all 160ms ease-in-out;
+}
+section h3:hover {
+  color: #e9aa52;
+  cursor: pointer;
 }
 section p {
   color: #c5c6ce;
@@ -61,18 +81,30 @@ aside span {
 }
 h4 {
   font-size: 18px;
+  transition: all 160ms ease-in-out;
+}
+h4:hover {
+  color: #f15d51;
+  cursor: pointer;
+}
+aside {
+  margin-bottom: 40px;
 }
 
 .nav-wrapper {
   overflow: auto;
+  margin-right: 40px;
 }
 .logo {
   float: left;
 }
+.menu-icon {
+  float: right;
+}
 .main-img {
   margin-bottom: 30px;
 }
-.main-p {
+.main-paragraph {
   padding-right: 40px;
   color: #5e607a;
   line-height: 2;
@@ -97,4 +129,52 @@ h4 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 36px;
+  }
+  button {
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+  section > h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  section h3 {
+    font-size: 15px;
+  }
+  section p {
+    font-size: 12px;
+    padding: 5px 10px 20px 0;
+  }
+  aside span {
+    font-size: 16px;
+  }
+  h4 {
+    font: 12px;
+  }
+  aside p {
+    font-size: 8px;
+  }
+  .nav-wrapper {
+    margin: 0px;
+  }
+  .main-paragraph {
+    padding: 0px;
+    font-size: 12px;
+  }
+  .section-new {
+    max-width: 100%;
+    height: auto;
+  }
+  .last-article {
+    margin: 0;
+    padding: 0;
+  }
+  .aside-img {
+    display: none;
+  }
 }
