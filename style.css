@@ -137,7 +137,7 @@ aside {
 
 @media (max-width: 960px) {
   h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
   button {
     padding: 5px 10px;
@@ -192,12 +192,63 @@ aside {
 
 @media (max-width: 400px) {
   header {
-    margin-top: 40px;
+    margin-top: 30px;
   }
+
   aside {
     flex-direction: column;
   }
+  h1 {
+    font-size: 40px;
+  }
+  button {
+    margin: 10px 0 30px 0;
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  section > h2 {
+    font-size: 32px;
+  }
+  section h3 {
+    font-size: 20px;
+  }
+  section p {
+    font-size: 15px;
+  }
+  aside span {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  aside p {
+    font-size: 15px;
+  }
+
   .nav-wrapper {
-    margin-right: 0;
+    margin: 0 10px;
+    width: 100%;
+  }
+  .logo {
+    width: 15%;
+  }
+  .menu-icon {
+    position: relative;
+    top: 6px;
+  }
+  .main-img-mobile {
+    margin-bottom: 20px;
+  }
+  .main-paragraph {
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  .section-new {
+    height: 489px;
+    width: 343px;
+  }
+  .aside-display-row {
+    display: flex;
+    margin-bottom: 20px;
   }
 }
