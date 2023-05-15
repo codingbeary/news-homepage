@@ -89,6 +89,7 @@ h4:hover {
 }
 aside {
   margin-bottom: 40px;
+  display: flex;
 }
 
 .nav-wrapper {
@@ -123,6 +124,9 @@ aside {
   height: 127px;
   width: 100px;
 }
+.image-description {
+  margin-left: 10px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -144,20 +148,30 @@ aside {
     margin-bottom: 20px;
   }
   section h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
   section p {
     font-size: 12px;
     padding: 5px 10px 20px 0;
   }
+  aside {
+    display: flex;
+    flex-direction: row;
+  }
+  aside-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
   aside span {
     font-size: 16px;
   }
   h4 {
-    font: 12px;
+    font: 14px;
   }
   aside p {
     font-size: 8px;
+    margin-bottom: 20px;
   }
   .nav-wrapper {
     margin: 0px;
@@ -174,7 +188,16 @@ aside {
     margin: 0;
     padding: 0;
   }
-  .aside-img {
-    display: none;
+}
+
+@media (max-width: 400px) {
+  header {
+    margin-top: 40px;
+  }
+  aside {
+    flex-direction: column;
+  }
+  .nav-wrapper {
+    margin-right: 0;
   }
 }
