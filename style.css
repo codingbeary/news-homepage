@@ -12,6 +12,8 @@ ul {
   list-style: none;
   word-spacing: 40px;
   float: right;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
 }
 
 li,
@@ -42,7 +44,35 @@ nav a:hover {
 .menu-icon {
   float: right;
 }
-
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  background: white;
+  cursor: pointer;
+}
+.closeIcon {
+  display: none;
+}
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+.showMenu {
+  transform: translateY(0);
+}
 /* main stylng */
 
 main {
