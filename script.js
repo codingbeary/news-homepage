@@ -3,6 +3,8 @@ const menuItems = document.querySelectorAll(".menuItem");
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
+const body = document.querySelector("body");
+const overlay = document.querySelector(".overlay");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -17,3 +19,10 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu);
+menuIcon.addEventListener("click", () => {
+  body.classList.add("overlay");
+});
+
+closeIcon.addEventListener("click", () => {
+  body.classList.remove("overlay");
+});
