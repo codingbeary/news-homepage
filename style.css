@@ -1,5 +1,6 @@
 body {
   font-family: "Inter", sans-serif;
+  background-color: #fffdfa;
 }
 
 /* header styling  */
@@ -12,8 +13,6 @@ ul {
   list-style: none;
   word-spacing: 40px;
   float: right;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
 }
 
 li,
@@ -41,37 +40,11 @@ nav a:hover {
 .logo {
   float: left;
 }
-.menu-icon {
+.menuIcon {
   float: right;
-}
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  background: white;
-  cursor: pointer;
 }
 .closeIcon {
   display: none;
-}
-.menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: black;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
-}
-.showMenu {
-  transform: translateY(0);
 }
 /* main stylng */
 
@@ -195,6 +168,9 @@ aside .small-article {
 }
 
 @media (max-width: 960px) {
+  header {
+    margin-right: 10px;
+  }
   h1 {
     font-size: 38px;
   }
@@ -230,9 +206,8 @@ aside .small-article {
   h4 {
     font-size: 13px;
   }
-
   .nav-wrapper {
-    margin: 0px;
+    margin: 0;
   }
   .main-paragraph {
     padding: 0px;
@@ -261,6 +236,7 @@ aside .small-article {
     padding: 10px 20px;
     font-size: 10px;
   }
+
   p {
     font-size: 15px;
   }
@@ -302,5 +278,35 @@ aside .small-article {
   .news-section {
     max-height: 100%;
     width: 343px;
+  }
+  .closeIcon {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 100px;
+    margin-left: 50px;
+    font-weight: 200;
+    margin-top: 60px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fffdfa;
+    overflow-x: hidden;
+    transition: 0.5s ease-in;
+    padding-top: 120px;
+  }
+
+  .showMenu {
+    transform: translateY(1000);
+    width: 50%;
   }
 }
