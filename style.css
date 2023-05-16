@@ -42,6 +42,7 @@ nav a:hover {
 }
 .menuIcon {
   float: right;
+  display: none;
 }
 .closeIcon {
   display: none;
@@ -208,6 +209,9 @@ aside .small-article {
   }
   .nav-wrapper {
     margin: 0;
+  }
+  .menuIcon {
+    display: none;
   }
   .main-paragraph {
     padding: 0px;
